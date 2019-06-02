@@ -1,0 +1,24 @@
+This README file contains information on the contents of the meta-ntp layer.
+
+This layer is for NTP on the stm32mp1 hardware.  Currently only adds the pps-gpio module to the kernel.
+
+Please see the corresponding sections below for details.
+
+Dependencies
+============
+
+  URI: https://github.com/STMicroelectronics/meta-st-stm32mp
+  branch: thud
+
+See https://wiki.st.com/stm32mpu/index.php/STM32MP1_Distribution_Package
+
+Table of Contents
+=================
+
+  I. Adding the meta-ntp layer to your build
+
+
+I. Adding the meta-ntp layer to your build
+=================================================
+
+Run 'bitbake-layers add-layer meta-ntp'
