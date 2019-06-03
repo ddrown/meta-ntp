@@ -1,0 +1,16 @@
+--- a/arch/arm/boot/dts/stm32mp157a-dk1.dts	2019-06-02 18:16:58.684957471 -0500
++++ b/arch/arm/boot/dts/stm32mp157a-dk1.dts	2019-06-02 18:34:51.853485867 -0500
+@@ -123,6 +123,13 @@
+ 		st,hs-rx-offset = <2>;
+ 		st,no-lsfs-sc;
+ 	};
++
++	pps {
++		gpios = <&gpioa 8 GPIO_ACTIVE_HIGH>;
++		status = "okay";
++
++		compatible = "pps-gpio";
++	};
+ };
+ 
+ &adc {
